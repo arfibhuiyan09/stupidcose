@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Your existing CSS styles here */
+body {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.grid-item {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Additional style for tutorial content */
+.tutorial-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #dcdcdc;
+}
+
+.tutorial-header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.tutorial-content {
+  margin-top: 20px;
+}
+
+.tutorial-content h2 {
+  color: #fff;
+}
+
+.tutorial-content p {
+  margin: 10px 0;
+}
+
+/* Style for the back button */
+.back-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.video-player {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Additional style for button animation */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: #2980b9;
+}
+
+/* Match the button color with your website's color scheme */
+.button {
+  background-color: #444; /* Update to match your color scheme */
+}
+
+.button:hover {
+  background-color: #333; /* Update to match your color scheme */
+}
+
+/* Style for button container using flexbox */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+</style>
+</head>
+<body>
+
+<div class="tutorial-container">
+  <div class="tutorial-header">
+    <h1>CSS Styling Tutorial</h1>
+  </div>
+  
+  <div class="tutorial-content">
+    <h2>Introduction</h2>
+    <p>In this tutorial, you'll learn how to create a personal portfolio website to showcase your projects and skills.</p>
+    <h2>Planning Your Portfolio</h2>
+    <p>Define your goals, target audience, and content for your portfolio website.</p>
+    <h2>Choosing a Design and Layout</h2>
+    <p>Select a design that reflects your style and create a user-friendly layout.</p>
+    <h2>Creating HTML Structure</h2>
+    <p>Build the basic HTML structure of your portfolio, including sections for about, projects, contact, etc.</p>
+    <h2>Styling with CSS</h2>
+    <p>Apply CSS styles to enhance the visual appeal of your portfolio and make it responsive.</p>
+    <h2>Adding Projects and Content</h2>
+    <p>Showcase your projects with images, descriptions, and links. Highlight your skills and achievements.</p>
+    <h2>Optimizing for SEO</h2>
+    <p>Optimize your portfolio for search engines to ensure it's discoverable by potential employers or clients.</p>
+    <!-- Add more tutorial content here -->
+  </div>
+
+  <div class="video-container">
+    <h2>Watch a Detailed Video covering CSS</h2>
+    <iframe class="video-player" width="560" height="315" src="https://www.youtube.com/embed/1PnVor36_40" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+  <div class="button-container">
+    <a href="tutorial.html" class="button button-down">Go Back to Tutorial</a>
+  </div>
+</div>
+<div class="container">
+  <div id="particles-container"></div>
+</body>
+</html>

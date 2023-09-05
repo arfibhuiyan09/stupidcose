@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+   background-color: lightgray;
+   font-family: Arial, sans-serif;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+
+
+.grid-item {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Additional style for fun facts */
+.fun-fact-grid-item {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #dcdcdc;
+}
+/* Additional style for career opportunities section */
+.career-opportunities {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.career-opportunities h2 {
+  color: #fff;
+}
+
+.career-opportunities p {
+  margin: 10px 0;
+}
+
+/* Additional style for button animation */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: #2980b9;
+}
+
+/* Match the button color with your website's color scheme */
+.button {
+  background-color: #444; /* Update to match your color scheme */
+}
+
+.button:hover {
+  background-color: #333; /* Update to match your color scheme */
+}
+
+/* Style for adjusting button position */
+.button-down {
+  margin-top: 10px; /* Adjust the value to move the button lower */
+}
+
+/* Style for button container using flexbox */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.video-player {
+  width: 100%;
+  max-width: 600px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>How To Decide your Coding Career </h1>
+  </div>
+  
+  
+  <!-- Career Opportunities Content -->
+  <div class="career-opportunities">
+    <h2>Navigating Coding and Programming Career Paths</h2>
+    <p>If you possess a genuine affinity for coding and find satisfaction in unraveling complex puzzles, the vast realm of programming ushers you into a world teeming with diverse professional opportunities. As the demand for adept developers continues to surge, the following potential roles beckon to those eager to carve out a rewarding career:</p>
+    
+<ul>
+    <li>
+        <h3>Front-End Developer</h3>
+        <p>A Front-End Developer is a specialized web developer who focuses on creating the visual and interactive elements of a website or web application. They use programming languages like HTML, CSS, and JavaScript to design and implement the user interface that users directly interact with. Front-End Developers ensure seamless user experiences by optimizing layouts, responsiveness, and overall performance.</p>
+    </li>
+    <br>
+    <li>
+        <h3>Back-End Developer</h3>
+        <p>A Back-End Developer is a type of software developer who focuses on the server-side components and logic that power websites and web applications. They work with databases, server management, and programming languages such as Python, Java, or PHP to ensure the functionality and data management of a website. Back-End Developers are responsible for handling data, security, and the behind-the-scenes operations that enable the Front-End to function smoothly.</p>
+    </li>
+    <br>
+    <li>
+        <h3>Full-Stack Developer</h3>
+        <p>A Full Stack Developer is a versatile professional proficient in both Front-End and Back-End development. They have expertise in a wide range of technologies, frameworks, and languages, allowing them to handle all aspects of web development. From designing user interfaces and implementing features to managing databases and server infrastructure, Full Stack Developers can create complete and dynamic web applications.</p>
+    </li>
+    <br>
+    <li>
+        <h3>Mobile App Developer</h3>
+        <p>A Mobile Developer is a skilled software engineer specializing in creating applications for mobile devices such as smartphones and tablets. They use programming languages like Swift, Kotlin, or React Native to develop both Android and iOS applications. Mobile Developers ensure optimal performance, user experience, and compatibility across various devices, contributing to the ever-evolving landscape of mobile technology.</p>
+    </li>
+    <br>
+    <li>
+        <h3>Software Engineer</h3>
+        <p>Software Engineers are skilled professionals who apply engineering principles to the entire software development lifecycle. They design, develop, test, and maintain software systems using a systematic and disciplined approach. By blending technical expertise with problem-solving skills, Software Engineers create robust, scalable, and efficient solutions to address a variety of technological challenges.</p>
+    </li>
+    <br>
+    <li>
+        <h3>Data Scientists</h3>
+        <p>Data Scientists are analytical experts who extract insights and knowledge from data using various statistical, machine learning, and data analysis techniques. They interpret complex data sets to drive informed business decisions and predictions, contributing to fields such as artificial intelligence and data-driven strategies.</p>
+    </li>
+</ul>
+
+    
+    <!-- Add more job roles and descriptions here -->
+    
+    <p>These roles are just the tip of the iceberg. From web development and data science to machine learning and cybersecurity, the programming field offers a diverse range of exciting career paths.</p>
+  </div>
+
+  <div class="video-container">
+    <h2>Watch a Detailed Video on the Preveious Subject</h2>
+    <iframe class="video-player" width="560" height="315" src="https://www.youtube.com/embed/T2Zw4Tk14-s" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="button-container">
+    <a href="howtogetjob.html" class="button button-down">Explaining Further on how to decide your Coding Career</a>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2023 Code.yes. All rights reserved.</p>
+  </div>
+</div>
+<div class="container">
+  <div id="particles-container"></div>
+</body>
+</html>

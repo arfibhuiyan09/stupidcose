@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Your existing CSS styles here */
+body {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav {
+  background-color: #444;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.grid-item {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Additional style for tutorial content */
+.tutorial-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #dcdcdc;
+}
+
+.tutorial-header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.tutorial-content {
+  margin-top: 20px;
+}
+
+.tutorial-content h2 {
+  color: #fff;
+}
+
+.tutorial-content p {
+  margin: 10px 0;
+}
+
+/* Style for the back button */
+.back-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.video-player {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Additional style for button animation */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: #2980b9;
+}
+
+/* Match the button color with your website's color scheme */
+.button {
+  background-color: #444; /* Update to match your color scheme */
+}
+
+.button:hover {
+  background-color: #333; /* Update to match your color scheme */
+}
+
+/* Style for button container using flexbox */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+</style>
+</head>
+<body>
+
+<div class="tutorial-container">
+  <div class="tutorial-header">
+    <h1>HTML Basics Tutorial</h1>
+  </div>
+  
+  <div class="tutorial-content">
+    <h2>Introduction to HTML</h2>
+    <p>HTML, or HyperText Markup Language, serves as the backbone of the modern web, enabling the creation and structure of web content. Utilizing a system of tags and elements, HTML facilitates the organization and presentation of text, images, multimedia, and links on websites. By defining the layout and components of a webpage, HTML forms the essential foundation for building engaging and interactive online experiences.</p>
+    
+    <h2>HTML Elements and Tags</h2>
+    <p>
+        To craft HTML elements, enclose content within opening tag and closing /tag tags, where "tag" denotes the specific element, like "p" for paragraphs. Elements can also have attributes enclosed within the opening tag, enhancing functionality or styling, such as (img src= "image.jpg" alt="Description") where "src" specifies the image source and "alt" provides an alternate description for accessibility.</p>
+    
+    <h2>Basic HTML Structure</h2>
+    <p>An HTML document starts with a <code>&lt;!DOCTYPE&gt;</code> declaration, followed by the <code>&lt;html&gt;</code> element that contains the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> elements.</p>
+    
+    <h2>Common HTML Tags</h2>
+    <p>Common HTML tags, like h1, p, and a, structure content by defining headings, paragraphs, and hyperlinks respectively, shaping the foundation of web pages.</p>
+    
+    <h2>Creating Lists</h2>
+    <p>
+        Creating lists in HTML involves using the <ul> tag for unordered lists or the <ol> tag for ordered lists, with each list item enclosed within <li> tags, allowing you to organize content in a bulleted or numbered format. For example, <ul><li>Item 1</li><li>Item 2</li></ul> generates an unordered list with two items.</p>
+    <h2>Adding Links and Images</h2>
+    <p>Learn how to create hyperlinks using the <code>&lt;a&gt;</code> tag and embed images using the <code>&lt;img&gt;</code> tag.</p>
+    
+    <!-- Add more tutorial content here -->
+  </div>
+
+  <div class="video-container">
+    <h2>Watch a Detailed Video covering HTML</h2>
+    <iframe class="video-player" width="560" height="315" src="https://www.youtube.com/embed/FQdaUv95mR8" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+  <div class="button-container">
+    <a href="tutorial.html" class="button button-down">Go Back to Tutorial</a>
+  </div>
+</div>
+<div class="container">
+  <div id="particles-container"></div>
+</body>
+</html>
